@@ -596,8 +596,6 @@ class Model:
             else:
                 results = results[:, inner, :]
 
-            print('Got here')
-            print(results)
             return results.squeeze()
         # Move on if this fails. It seems to not be a global expression then.
         except Exception:
